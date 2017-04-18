@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalendarDemo</string>
+    <string name="guest_full">客满</string>
+    <string name="no_work">不营业</string>
+</resources>

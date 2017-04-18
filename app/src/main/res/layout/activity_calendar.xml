@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_return"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/title"
+                style="@style/set_tv_base"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <ImageView
+                android:id="@+id/iv_cal_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_cal_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/tv_cal_date"
+                style="@style/set_tv_base"
+                android:text="2017年4月"
+                android:layout_centerInParent="true"
+                />
+            <ImageView
+                android:id="@+id/iv_cal_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_cal_right"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/coners_gray_bg_white"
+            android:orientation="vertical">
+            <com.lushiju.calendardemo.view.WeekDayView
+                android:id="@+id/weekDay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <com.lushiju.calendardemo.view.MonthDateView
+                android:id="@+id/monthDateView"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="确定"
+            android:textColor="@color/grey_333333"
+            />
+
+</LinearLayout>
